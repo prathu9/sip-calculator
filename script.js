@@ -1,10 +1,10 @@
 const inputSlider = document.querySelectorAll(".slider");
 const inputText = document.querySelectorAll(".input-text");
 const outputValue = document.querySelectorAll(".output-value");
-let principle  = 0;
+let principle  = 5000;
 let noOfPayment = 0;
-let time = 0;
-let rateOfReturn = 0;
+let time = 10;
+let rateOfReturn = 14;
 
 const inputChange = (e, i) => {
     inputText[i].value = e.target.value;
