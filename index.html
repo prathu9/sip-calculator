@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div class="calc-container">
+        <h1 class="calc-header">SIP Calculator</h1>
+        <div class="calc-wrapper">
+            <div class="calc-input">
+                <div class="calc-amount">
+                    <div class="subtitle">
+                        <span class="amount-title">SIP Amount Per Month</span>
+                        <span>
+                            <input class="input-text" type="text" value="5000"/>
+                        </span>
+                    </div>
+                    <div class="input-range">
+                        <input class="slider" type="range" min="100" max="100000"  value="5000"/>
+                    </div>
+                </div>
+                <div class="calc-time">
+                    <div class="subtitle">
+                        <span class="time-title">Investment Period</span>
+                        <span>
+                            <input class="input-text" type="text" value="10"/>
+                        </span>
+                    </div>
+                    <div class="input-range">
+                        <input class="slider" type="range" min="1" max="30" value="10"/>
+                    </div>
+                </div>
+                <div class="calc-return">
+                    <div class="subtitle">
+                        <span class="return-title">Expected Rate of Return</span>
+                        <span>
+                            <input class="input-text" type="text" value="14"/>
+                        </span>
+                    </div>
+                    <div class="input-range">
+                        <input class="slider" type="range" min="4" max="100" value="14"/>
+                    </div>
+                </div>
+            </div>
+            <div class="calc-output">
+                <div class="total-wealth">
+                    <h3 class="output-title">Expected Wealth Accumulation</h3>
+                    <span class="output-value"> ₹13,10,456</span>
+                </div>
+                <div class="investment">
+                    <h4 class="output-title">Total Investment</h4>
+                    <span class="output-value">₹6,00,000</span>
+                </div>
+                <div class="gain">
+                    <h4 class="output-title">Expected Gains</h4>
+                    <span class="output-value">₹7,10,456</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

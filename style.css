@@ -1,0 +1,156 @@
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calc-container{
+    width:80%;
+    border:2px solid #000;
+}
+
+.calc-header{
+    font-size:18px;
+    text-align:center;
+    margin:0;
+    background-color:rgb(150, 224, 253);
+    padding:10px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.calc-wrapper{
+    width:100%;
+    display:flex;
+}
+
+.calc-input{
+    width:55%;
+}
+
+.calc-input > div{
+    width:100%;
+    padding:10px;
+}
+
+.subtitle{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.subtitle span{
+    position: relative;
+    padding:10px 5px 20px 5px;
+}
+
+.subtitle span:nth-child(2):before{
+    content: "";
+    width:39px;
+    height:39px;
+    background-color: #bebebe;
+    border:1px solid rgb(124, 124, 124);
+    position: absolute;
+    top:10px;
+    z-index:10;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px 10px 10px;
+    box-sizing:border-box;
+}
+
+.amount-title + span:nth-child(2):before{
+    content:"₹";
+    border-radius: 5px 0 0 5px;
+    left:5px;
+}
+
+.time-title + span:nth-child(2):before{
+    content:"Yrs";
+    border-radius: 0 5px 5px 0;
+    right:0;
+}
+
+.return-title + span:nth-child(2):before{
+    content:"%";
+    border-radius: 0 5px 5px 0;
+    right:0;
+}
+
+.input-text{
+    position:relative;
+    max-width:180px;
+    height:39px;
+    border: 1px solid rgb(124, 124, 124);
+    border-radius:5px;
+    box-sizing: border-box;
+    font-size:18px;
+}
+
+.amount-title + span:nth-child(2) .input-text{
+    padding-left:45px;
+}
+
+.time-title + span:nth-child(2) .input-text{
+    padding-right:45px;
+    padding-left:10px;
+}
+
+.return-title + span:nth-child(2) .input-text{
+    padding-right:45px;
+    padding-left:10px;
+}
+
+.slider {
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 100%; 
+    height: 10px; 
+    background: #d3d3d3; 
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+    border-radius:50px;
+  }
+  
+
+.slider:hover {
+    opacity: 1;
+}
+  
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 15px; 
+    height: 15px; 
+    background: #00f; 
+    cursor: pointer; 
+    border-radius:50%;
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px; 
+    height: 25px; 
+    background: #04AA6D; 
+    cursor: pointer; 
+}
+
+.calc-output{
+     width:45%;
+}
+
+h3, h4{
+    text-align: center;
+}
+
+.output-value{
+    width:100%;
+    display:inline-block;
+    text-align: center;
+}
