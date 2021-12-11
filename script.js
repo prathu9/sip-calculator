@@ -60,8 +60,8 @@ const calculateReturn = () => {
         ratePerMonth = (rateOfReturn/100)/12;
         totalAmount = Math.round(principle*((Math.pow((1 + ratePerMonth),noOfPayment)-1)/ratePerMonth) * (1 + ratePerMonth));
         investmentAmount = principle*time*12;console.log(principle, time)
-        outputValue[0].textContent = `₹${totalAmount}`;
-        outputValue[1].textContent = `₹${investmentAmount}`;
-        outputValue[2].textContent = `₹${totalAmount - investmentAmount}`;
+        outputValue[0].textContent = `₹${totalAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
+        outputValue[1].textContent = `₹${investmentAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
+        outputValue[2].textContent = `₹${(totalAmount - investmentAmount).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
     }
 }
