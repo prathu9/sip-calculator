@@ -11,6 +11,15 @@ body{
     font-family: "Lato", sans-serif;
 }
 
+.sip-option-container{
+    text-align: center;
+    margin:20px 0 20px 0;
+}
+
+.sip-option{
+    cursor: pointer;
+}
+
 .calc-container{
     position: absolute;
     left: 50%;
@@ -171,6 +180,8 @@ h3, h4{
     text-align: center;
     font-size:1rem;
     font-weight:400;
+    word-wrap: break-word;
+    padding:0 20px 0 20px;
 }
 
 .total-wealth .output-value{
